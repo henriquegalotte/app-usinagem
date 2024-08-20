@@ -91,6 +91,13 @@ footer{
     margin-top: 25px;
     padding: 15px;
 }
+#fieldskin{
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding: 15px;
+    display: none;
+}
 .btnblue{
     background-color: #1F538D;
     margin: 10px;
@@ -103,15 +110,43 @@ footer{
 .btnblue:hover{
     border: 1px solid white;
 }
-#boxmaterial{
+
+
+#hssdesbastelist, #hssacabamentolist,#steelacabamentolist,#steeldesbastelist{
     width: 200px;
     margin-left: 50px;
     margin-top: 25px;
     color: black;
     font-weight: 500;
+    display: none;
 
 }
 option{
     font-weight: 500;
     color: black;
+}
+#diametro{
+    margin-left: 50px;
+    margin-top: 25px;
+    color: black;
+    font-weight: 500;
+    display: none;
+
+}
+#btncalc{
+    margin-left: 50px;
+    margin-top: 25px;
+    font-weight: 500;
+    display: none;
+}
+#btnlimpar{
+    margin-left: 50px;
+    margin-top: 25px;
+    font-weight: 500;
+    display: none;
+}
+#botoes{
+
+    display: flex;
+
 }

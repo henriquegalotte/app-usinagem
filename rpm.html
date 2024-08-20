@@ -21,21 +21,21 @@
 
         <fieldset id="fieldtool">
             <legend>Ferramenta</legend>
-            <input type="button" class="btnblue" value="Aço Rápido">
-            <input type="button" class="btnblue" value="Metal Duro">
+            <input type="button" class="btnblue" value="Aço Rápido" onclick="clicksteel()">
+            <input type="button" class="btnblue" value="Metal Duro" onclick="clickhss()">
 
         </fieldset>
-        <fieldset id="fieldtool">
+        <fieldset id="fieldskin">
             <legend>Superfície</legend>
-            <input type="button" class="btnblue" value="Desbaste">
-            <input type="button" class="btnblue" value="Acabamento">
+            <input type="button" class="btnblue" value="Desbaste" onclick="clickdesbaste()">
+            <input type="button" class="btnblue" value="Acabamento" onclick="clickacabamento()">
 
         </fieldset>
         <form action="">
+            
 
-
-            <select name="steel" id="boxmaterial">
-                <option value="" selected>Selecione um material</option>
+            <select name="steel" id="steeldesbastelist">
+                <option value="" selected>Aço desbaste</option>
                 <option value="1">10</option>
                 <option value="2">20</option>
                 <option value="3">30</option>
@@ -46,19 +46,59 @@
                 <option value="8">80</option>
                 <option value="9">90</option>
                 <option value="10">100</option>
-                
-                
-                
-
-
-
+            </select>
+            <select name="steel" id="steelacabamentolist">
+                <option value="" selected>Aço acabamento</option>
+                <option value="111">101</option>
+                <option value="222">202</option>
+                <option value="333">303</option>
+                <option value="444">404</option>
+                <option value="555">505</option>
+                <option value="666">606</option>
+                <option value="777">707</option>
+                <option value="888">808</option>
+                <option value="999">909</option>
+                <option value="1000">1001</option>
             </select>
 
+            <select name="steel" id="hssdesbastelist">
+                <option value="" selected>HSS desbaste</option>
+                <option value="1">10</option>
+                <option value="2">20</option>
+                <option value="3">30</option>
+                <option value="4">40</option>
+                <option value="5">50</option>
+                <option value="6">60</option>
+                <option value="7">70</option>
+                <option value="8">80</option>
+                <option value="9">90</option>
+                <option value="10">100</option>
+            </select>
+            <select name="steel" id="hssacabamentolist">
+                <option value="" selected>HSS acabamento</option>
+                <option value="1">101</option>
+                <option value="2">202</option>
+                <option value="3">303</option>
+                <option value="4">404</option>
+                <option value="5">505</option>
+                <option value="6">606</option>
+                <option value="7">707</option>
+                <option value="8">808</option>
+                <option value="9">909</option>
+                <option value="10">1001</option>
+            </select>
 
+            <input type="number" name="diametro" id="diametro">
 
-
-
-
+            <div id="botoes">
+                <div>
+                    <input type="button" class="btnblue" id="btncalc" value="Calcular" onclick="clickcalc()">
+                </div>
+                <div>
+                    <input type="button" class="btnblue" id="btnlimpar" value="Limpar" onclick="clicklimp()">
+                </div>
+            </div>
+            
 
 
 
@@ -66,6 +106,7 @@
 
 
     </main>
+    
     <footer>
         <h3 id="linkrodape">Feito por <a href="https://www.instagram.com/henriquegalotte/"  target="_blank" style="text-decoration: none;">Henrique Galotte </a> | 2024 &#169</h1>
 
